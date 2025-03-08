@@ -39,7 +39,7 @@ I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2025 (Under review)</div><img src='images/deflickering_occ.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[OccLinker: Deflickering Occupancy Networks through Lightweight Spatio-Temporal Correlation](https://arxiv.org/pdf/2502.15438)
+[OccLinker: Deflickering Occupancy Networks through Lightweight Spatio-Temporal Correlation](#)(link coming soon)
 
 **Fengcheng Yu**, Haoran Xu, Canming Xia, Ziyang Zong, Guang Tan
 
@@ -53,7 +53,7 @@ I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2025 (Under review)</div><img src='images/llm.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[\*\*](***)
+[\*\*](***)(link coming soon)
 
 Ziyang Zong, Guanying Chen, Zhaohuan Zhan, **Fengcheng Yu**, Guang Tan
 
