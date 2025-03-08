@@ -36,6 +36,34 @@ I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2025 (Under review)</div><img src='images/deflickering_occ.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[OccLinker: Deflickering Occupancy Networks through Lightweight Spatio-Temporal Correlation](https://arxiv.org/pdf/2502.15438)
+
+**Fengcheng Yu**, Haoran Xu, Canming Xia, Ziyang Zong, Guang Tan
+
+<!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+
+- **Keywords:** vision-based occupancy network, deflickering, spatio-temporal correlation, plug-and-play
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2025 (Under review)</div><img src='images/llm.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[\*\*](***)
+
+Ziyang Zong, Guanying Chen, Zhaohuan Zhan, **Fengcheng Yu**, Guang Tan
+
+<!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+
+- **Keywords:** floorplan generation, large language model, diffusion model
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Computers in Biology and Medicine 2024</div><img src='images/pd-model.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -46,20 +74,6 @@ Jiehui Huang, Lishan Lin, **Fengcheng Yu**, Xuedong He, Wenhui Song, Jiaying Lin
 <!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
 
 - Proposed an effective end-to-end deep learning model for Parkinson's disease (PD) severity diagnosis based on facial video is proposed. The model can extract features from PD patient videos and give robust and interpretable diagnostic results, effectively judging the severity of PD disease.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/occ.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[LEAP: Enhancing Vision-Based Occupancy Networks with Lightweight Spatio-Temporal Correlation](https://arxiv.org/pdf/2502.15438)
-
-**Fengcheng Yu**, Haoran Xu, Canming Xia, Guang Tan
-
-<!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
-
-- Proposed a **plug-and-play** module to boost 3D occupancy prediction accuracy by resolving occlusions and sparse cues; developed a compact latent space for aligning multi-view features, motion, and temporal data; designed a tri-stream fusion (temporal-motion-visual) to refine global pixel-voxel correlations; integrated lightweight residual optimization with <5% computational overhead; achieved state-of-the-art results on autonomous driving benchmarks while maintaining real-time inference.
 
 </div>
 </div>
