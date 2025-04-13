@@ -26,6 +26,7 @@ I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.
 # 📚 Education
 - **Sun Yat-sen University** *2021-2025* 
   - Undergraduate, Intelligence Science and Technology, Computer Science; GPA: 3.9/4.0, 3.9/5.0;
+  - Undergrad TA for *Operating Systems* and *Advanced programming (C++ programming)*;
 
 # 🔥 Awards
 - *2021-2024*: &nbsp; Outstanding Student Scholarship, SYSU (1st Prize in 2022 🏅, **awarded consecutively 2022-2024**)
