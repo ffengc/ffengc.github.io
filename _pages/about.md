@@ -19,11 +19,16 @@ redirect_from:
 
 # 🧍‍♂️Biography
 
-I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.cn/). My interests mainly focus on operating system performance optimization, computer network performance optimization, distributed system design and architecture, virtualization research and development, machine learning, computer vision, autonomous driving, and automatic control. I will receive the Bachelor of Engineering degree from Sun Yat-sen University in June 2025. From 2022 to 2023, I had the honor to conduct scientific research and study in Professor [Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm)'s (Director of AI for Science (AI4S) at Peking University). laboratory, YCLab. From 2024 to 2025, I had the honor to conduct scientific research and study in Professor [Tan Guang (谭光)](https://ise.sysu.edu.cn/teacher/teacher01/1354976.htm)'s laboratory. My resume is available upon request. If you would like to chat, feel free to reach out.
+I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.cn/). My interests mainly focus on operating system performance optimization, computer network performance optimization, distributed system design and architecture, virtualization research and development, machine learning, computer vision, autonomous driving, and automatic control. I will receive the Bachelor of Engineering degree from Sun Yat-sen University in June 2025. From 2022 to 2023, I had the honor to conduct scientific research and study in Professor [Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm)'s (Director of AI for Science (AI4S) at Peking University). laboratory, YCLab. From 2024 to 2025, I had the honor to conduct scientific research and study in Professor [Tan Guang (谭光)](https://ise.sysu.edu.cn/teacher/teacher01/1354976.htm)'s laboratory. My resume is available upon request. 
+
+In January 2025, I was admitted to the CS32 master's program 25 fall at the [University of Southern California (USC)](https://www.usc.edu/). If you would like to chat, feel free to reach out.
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 # 📚 Education
+- **University of Southern California** *2025-2027* 
+  - Grad, MS in Computer Science (CS32);
+
 - **Sun Yat-sen University** *2021-2025* 
   - Undergraduate, Intelligence Science and Technology, Computer Science; GPA: 3.9/4.0, 3.9/5.0;
   - Undergrad TA for *Operating Systems* and *Advanced programming (C++ programming)*;
@@ -54,7 +59,7 @@ I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2025 (Under review)</div><img src='images/llm.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[\*\*](https://arxiv.org/abs/2411.12279)
+[HouseTune: Two-Stage Floorplan Generation with LLM Assistance](https://arxiv.org/abs/2411.12279)
 
 Ziyang Zong, Guanying Chen, Zhaohuan Zhan, **Fengcheng Yu**, Guang Tan
 
