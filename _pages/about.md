@@ -42,10 +42,10 @@ In January 2025, I was admitted to the CS32 master's program 25 fall at the [Uni
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2025 (Under review)</div><img src='images/deflickering_occ.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Transactions on Image Processing (Under review)</div><img src='images/deflickering_occ.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[OccLinker: Deflickering Occupancy Networks through Lightweight Spatio-Temporal Correlation](https://arxiv.org/abs/2502.15438)
+[Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation](https://arxiv.org/abs/2502.15438)
 
 **Fengcheng Yu**, Haoran Xu, Canming Xia, Ziyang Zong, Guang Tan
 
@@ -56,7 +56,7 @@ In January 2025, I was admitted to the CS32 master's program 25 fall at the [Uni
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV2025 (Under review)</div><img src='images/llm.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI2025 (Under review)</div><img src='images/llm.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [HouseTune: Two-Stage Floorplan Generation with LLM Assistance](https://arxiv.org/abs/2411.12279)
