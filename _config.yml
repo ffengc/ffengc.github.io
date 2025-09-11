@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Fengcheng Yu"
-description              : "🇨🇳SYSU undergraduated student. 🧑‍🎓 Major in Intelligence Science and Technology - Computer Science. 25Fall University of Southern California - MS in Computer Science"
+description              : "🇨🇳SYSU undergraduated student. 🧑‍🎓 Major in Intelligence Science and Technology - Computer Science. 🇺🇸25Fall University of Southern California - MS in Computer Science"
 repository               : "ffengc/ffengc.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Fengcheng Yu"
   avatar           : "images/android-chrome-192x192.png"
-  bio              : "Sun Yat-sen University (SYSU)"
-  location         : "Guangzhou, China"
+  bio              : "University of Southern California"
+  location         : "Los Angeles, United States"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
@@ -40,10 +40,10 @@ author:
   github           : "ffengc"
   google_plus      :
   keybase          :
-  instagram        : "samyu0366"
+  instagram        : "beibaosam"
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : # e.g., "linkedin username"
+  linkedin         : "fengcheng-yu-20811a37b"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : "https://orcid.org/0009-0003-0831-9817"
   pinterest        :
