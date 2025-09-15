@@ -204,6 +204,7 @@ for developers to implement and adapt in various environments.
   - Built an engaged community with **8,000+ followers**.
   - Selected highly rated columns (Posts are in Chinese only):
     - [Docker: From Understanding to Practice and then to the Underlying Principles](https://blog.csdn.net/yu_cblog/category_12424689.html)
+    - [A Step-by-Step Guide to Using Git](https://blog.csdn.net/yu_cblog/category_12419275.html)
     - [Practical & High-Quality Blog Compilation](https://blog.csdn.net/yu_cblog/category_12379430.html)
     - [Implementing Data Structures from Scratch](https://blog.csdn.net/yu_cblog/category_11490888.html)
     - [Demystifying C++](https://blog.csdn.net/yu_cblog/category_11925640.html)
