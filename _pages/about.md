@@ -8,15 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
-<span class='anchor' id='about-me'></span>
-
 # 🧍‍♂️Biography
 
 I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.cn/). My interests mainly focus on operating system performance optimization, computer network performance optimization, distributed system design and architecture, virtualization research and development, machine learning, computer vision, autonomous driving, and automatic control. I will receive the Bachelor of Engineering degree from Sun Yat-sen University in June 2025. From 2022 to 2023, I had the honor to conduct scientific research and study in Professor [Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm)'s (Director of AI for Science (AI4S) at Peking University). laboratory, YCLab. From 2024 to 2025, I had the honor to conduct scientific research and study in Professor [Tan Guang (谭光)](https://ise.sysu.edu.cn/teacher/TanGuang)'s laboratory. My resume is available upon request. 
@@ -118,7 +109,7 @@ Jiehui Huang, Lishan Lin, **Fengcheng Yu**, Xuedong He, Wenhui Song, Jiaying Lin
 - Implemented advanced features such as word frequency analysis, dynamically updated indexes, and prioritized search result
 sorting, making the system highly effective for developers seeking quick access to technical documents.
 
-**Related technologies:** C/C+, C++11, STL, Boost, jsoncpp, cppjieba, cpp-httplib, jQuery, ajax
+**Related technologies:** System/Network Programming, C/C++11, Web Development, STL, Boost, jsoncpp, cppjieba, cpp-httplib, jQuery, ajax, inverted indexing, ranking algorithms, ...
 
 [**Project**](https://github.com/ffengc/boost-search-engine/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
@@ -133,7 +124,7 @@ sorting, making the system highly effective for developers seeking quick access 
 - Developed an online coding and evaluation platform similar to LeetCode, enabling users to write, submit, and evaluate code directly in the browser. Supported and Provided instant feedback and detailed error analysis.
 - Implemented key features including question browsing, real-time code editing with Ace editor, and automated code submission and judgment. Integrated custom load balancing to optimize server utilization and response times.
 
-**Related technologies:** STL, Boost standard library, cpp-httplib, ctemplate, jsoncpp, load balancing design, distributed systems, multi process/thread control, MySQL C Connect, Ace editor, ajax
+**Related technologies:** System/Network Programming, STL, Boost standard library, cpp-httplib, ctemplate, jsoncpp, load balancing design, distributed systems, multi process/thread control, MySQL C Connect, Ace editor, ajax
 
 [**Project**](https://github.com/ffengc/Load-balanced-online-OJ-system) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
@@ -149,7 +140,7 @@ sorting, making the system highly effective for developers seeking quick access 
 
 The tcmalloc is a memory management project open sourced by Google. I implemented the core functions in tcmalloc through learning and simulation, and implemented a high-concurrency memory pool to replace the native malloc memory development method. Its design purpose is to adapt to the characteristics of a single server with multiple CPU cores, and to ensure that the performance of the memory allocator will not drop sharply due to multi-core competition. In order to reduce memory usage, objects of the same memory size are concentrated in spans composed of several adjacent pages.
 
-**Related technologies:** STL, multi-threading, memory management algorithms, lock-free programming
+**Related technologies:** Sync and Async Programming, System Programming, STL, multi-threading, memory management algorithms, lock-free programming
 
 [**Project**](https://github.com/ffengc/Google-tcmalloc-simulation-implementation) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
@@ -197,12 +188,24 @@ for developers to implement and adapt in various environments.
 - [Reactor-based-HyperWebServer](https://github.com/ffengc/Reactor-based-HyperWebServer)
   - The project manually implemented an epoll server based on red brick tree from scratch, and on this basis, encapsulated it into a reactor asynchronous IO multiplexing server. Due to the multiplexing feature, this network server can withstand high concurrency.
 
-# 💻 Internships
+# 💻 Experience
 - *2024.01 - 2024.02*, **Yunhong Information Technology Co., Ltd.**, Guangzhou, China.
-  - *Virtualization R&D Engineer in R&D Department*
+  - *Virtualization R&D Engineer Intern in R&D Department*
   - Initiated and developed the “virtual machine probe” using Libvmi to monitor KVM architectures effectively. Enhanced virtual machine-to-host interactions through spice-protocol, enabling clipboard sharing and file dragging.
   - Produced detailed documentation on new tools and protocols, significantly improving development and testing efficiency within the R&D department. Established a Confluence workspace to enhance collaborative efforts among a five-person team.
 - *2024.07 - 2024.09*, **Lingzong Technology (Shenzhen) Co., Ltd.**, Shenzhen, China.
-  - *R&D center intern*
+  - *R&D Center Intern*
   - Conducted in-depth research on advanced occupancy prediction technologies such as SurroundOcc and SelfOcc. Focused on understanding and experimenting with their core functionalities and advantages.
   - Researched and explored the mechanism of “multi-head prediction” in occupancy prediction, adjusted the original model structure to enhance prediction accuracy.
+- *2021.10-Present*, **CSDN (One of China’s Largest Tech Community)**
+  - Backend Development Content Creator, Part-time
+  - Selected as a high-quality backend development content creator.
+  - Published **150+** technical blogs covering system design, distributed computing, and backend frameworks. Received **over 390,000 visits**.
+  - Built an engaged community with **8,000+ followers**.
+  - Selected highly rated columns (Posts are in Chinese only):
+    - [Docker: From Understanding to Practice and then to the Underlying Principles](https://blog.csdn.net/yu_cblog/category_12424689.html)
+    - [Practical & High-Quality Blog Compilation](https://blog.csdn.net/yu_cblog/category_12379430.html)
+    - [Implementing Data Structures from Scratch](https://blog.csdn.net/yu_cblog/category_11490888.html)
+    - [Demystifying C++](https://blog.csdn.net/yu_cblog/category_11925640.html)
+    - [STL Source Code Deep Dive](https://blog.csdn.net/yu_cblog/category_11983210.html)
+    - ...
