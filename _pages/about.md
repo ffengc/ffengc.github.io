@@ -8,20 +8,21 @@ redirect_from:
   - /about.html
 ---
 
-# 🧍‍♂️Biography
 
-I am Fengcheng Yu, a undergrad at [Sun Yat-sen University](https://www.sysu.edu.cn/). My interests mainly focus on operating system performance optimization, computer network performance optimization, distributed system design and architecture, virtualization research and development, machine learning, computer vision, autonomous driving, and automatic control. I will receive the Bachelor of Engineering degree from Sun Yat-sen University in June 2025. From 2022 to 2023, I had the honor to conduct scientific research and study in Professor [Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm)'s (Director of AI for Science (AI4S) at Peking University). laboratory, YCLab. From 2024 to 2025, I had the honor to conduct scientific research and study in Professor [Tan Guang (谭光)](https://ise.sysu.edu.cn/teacher/TanGuang)'s laboratory. My resume is available upon request. 
+# Biography
 
-In January 2025, I was admitted to the CS32 master's program 25 fall at the [University of Southern California (USC)](https://www.usc.edu/). If you would like to chat, feel free to reach out.
+I am Fengcheng Yu, currently an M.S. student in [Computer Science](https://www.cs.usc.edu/academic-programs/masters/computer-science-general/) at the [University of Southern California (USC)](https://www.usc.edu/), where I began my graduate studies in August 2025. Since 2025, I have been involved in research led by Professor Ramesh Govindan, focusing on mobile systems, particularly real-time mobile sensing and low-latency data processing for in-vehicle perception systems, with an emphasis on efficient parallel processing under resource-constrained environments.
+
+Previously, I received my Bachelor of Engineering degree from [Sun Yat-sen University](https://www.sysu.edu.cn/) in June 2025. From 2022 to 2023, I conducted research in the YCLab led by Professor [Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm) (Director of AI for Science (AI4S) at Peking University). From 2024 to 2025, I continued my research training in Professor [Guang Tan (谭光)](https://ise.sysu.edu.cn/teacher/TanGuang)’s laboratory at Sun Yat-sen University.
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 # 📚 Education
 - **University of Southern California** *2025-2027* 
-  - Grad, MS in Computer Science (CS32);
+  - MS Student, MS in Computer Science (CS32); GPA: 3.85/4.0
 
 - **Sun Yat-sen University** *2021-2025* 
-  - Undergraduate, Intelligence Science and Technology, Computer Science; GPA: 3.9/4.0, 3.9/5.0;
+  - Undergraduate Student, Intelligence Science and Technology, Computer Science; GPA: 3.9/4.0, 3.9/5.0;
   - Undergrad TA for *Operating Systems* and *Advanced programming (C++ programming)*;
 
 # 🔥 Awards
@@ -47,7 +48,7 @@ In January 2025, I was admitted to the CS32 master's program 25 fall at the [Uni
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI2025 (Under review)</div><img src='images/llm.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI2026</div><img src='images/llm.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [HouseTune: Two-Stage Floorplan Generation with LLM Assistance](https://arxiv.org/abs/2411.12279)

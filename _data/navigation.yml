@@ -1,7 +1,7 @@
 # main links links
 main:
-  - title: "About Me"
-    url: "/#about-me"
+  - title: "Biography"
+    url: "/#biography"
 
   - title: "Education"
     url: "/#-education"
@@ -15,5 +15,5 @@ main:
   - title: "Selected Projects"
     url: "/#-selected-projects"
 
-  - title: "Internships"
-    url: "/#-internships"
+  - title: "Experience"
+    url: "/#-experience"
