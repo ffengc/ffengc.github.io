@@ -11,7 +11,7 @@ redirect_from:
 
 # Biography
 
-I am Fengcheng Yu, currently an M.S. student in [Computer Science](https://www.cs.usc.edu/academic-programs/masters/computer-science-general/) at the [University of Southern California (USC)](https://www.usc.edu/), where I began my graduate studies in August 2025. Since 2025, I have been involved in research led by Professor Ramesh Govindan, focusing on mobile systems, particularly real-time mobile sensing and low-latency data processing for in-vehicle perception systems, with an emphasis on efficient parallel processing under resource-constrained environments.
+I am Fengcheng Yu, currently an M.S. student in [Computer Science](https://www.cs.usc.edu/academic-programs/masters/computer-science-general/) at the [University of Southern California (USC)](https://www.usc.edu/), where I began my graduate studies in August 2025. Since 2025, I have been involved in research led by Professor [Ramesh Govindan](https://govindan.usc.edu), focusing on mobile systems, particularly real-time mobile sensing and low-latency data processing for in-vehicle perception systems, with an emphasis on efficient parallel processing under resource-constrained environments.
 
 Previously, I received my Bachelor of Engineering degree from [Sun Yat-sen University](https://www.sysu.edu.cn/) in June 2025. From 2022 to 2023, I conducted research in the YCLab led by Professor [Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm) (Director of AI for Science (AI4S) at Peking University). From 2024 to 2025, I continued my research training in Professor [Guang Tan (谭光)](https://ise.sysu.edu.cn/teacher/TanGuang)’s laboratory at Sun Yat-sen University.
 
