@@ -32,7 +32,21 @@ Previously, I received my Bachelor of Engineering degree from [Sun Yat-sen Unive
 - *2023*: &nbsp; 2nd Prize of China University Computer Competition - Group Programming Ladder Competition - Guangdong
 - *2023*: &nbsp; 2nd Prize in the "LanQiao" Cup National Software Competition (C/C++) Guangdong Division
 
-# 📝 Publications 
+# 📝 Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Mobicom26 (Under Review)</div><img src='images/cargaze.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+<!-- CarGaze: Gaze-Based Target Localization in Vehicular Environments -->
+\*\*\* **Paper Title**
+
+Chunyu Xia, Christina Suyong Shin, **Fengcheng Yu**, Chuan Li, Fan Bai, Harsha V. Madhyastha, Ramesh Govindan
+
+- **Keywords:** mobile sensing, gaze localization, multi-camera perception, real-time systems
+- Developed a real-time mobile sensing pipeline for an in-vehicle perception system integrating synchronized multi-camera streams and geographic signals. Implemented low-latency data processing and buffering mechanisms suitable for resource-constrained mobile environments. Contributed to data processing, experimental visualization, and figure preparation.
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Transactions on Image Processing (Under review)</div><img src='images/deflickering_occ.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
