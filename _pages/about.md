@@ -11,7 +11,7 @@ redirect_from:
 
 # Biography
 
-I am Fengcheng Yu, currently an M.S. student in [Computer Science](https://www.cs.usc.edu/academic-programs/masters/computer-science-general/) at the [University of Southern California (USC)](https://www.usc.edu/), where I began my graduate studies in August 2025. Since 2025, I have been involved in research led by Professor [Ramesh Govindan](https://govindan.usc.edu), focusing on mobile systems, particularly real-time mobile sensing and low-latency data processing for in-vehicle perception systems, with an emphasis on efficient parallel processing under resource-constrained environments.
+I am Fengcheng Yu, currently an M.S. student in [Computer Science](https://www.cs.usc.edu/academic-programs/masters/computer-science-general/) at the [University of Southern California (USC)](https://www.usc.edu/), where I began my graduate studies in August 2025. Since 2025, I have been involved in research led by Dr. [Ramesh Govindan](https://govindan.usc.edu) (Northrop Grumman Chair in Engineering, Professor of Computer Science at the University of Southern California), focusing on mobile systems, particularly real-time mobile sensing and low-latency data processing for in-vehicle perception systems, with an emphasis on efficient parallel processing under resource-constrained environments.
 
 Previously, I received my Bachelor of Engineering degree from [Sun Yat-sen University](https://www.sysu.edu.cn/) in June 2025. From 2022 to 2023, I conducted research in the YCLab led by Professor [Calvin Yu-Chian Chen (陈语谦)](https://www.ece.pku.edu.cn/info/1053/2659.htm) (Director of AI for Science (AI4S) at Peking University). From 2024 to 2025, I continued my research training in Professor [Guang Tan (谭光)](https://ise.sysu.edu.cn/teacher/TanGuang)’s laboratory at Sun Yat-sen University.
 
@@ -93,6 +93,26 @@ Jiehui Huang, Lishan Lin, **Fengcheng Yu**, Xuedong He, Wenhui Song, Jiaying Lin
 
 
 # 🔧 Selected Projects
+
+<!-- here -->
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/coming.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Edge FaaS Cold-Start Mitigation via EWMA + CUSUM Prediction** *USC CSCI599, Network System for Cloud Computing Course Project, Professor: [Ramesh Govindan](https://govindan.usc.edu)*
+
+This project builds a clean-slate, bare-metal FaaS (Function-as-a-Service) worker node from scratch in C++, targeting the cold-start problem in edge serverless environments.
+
+**Key Design Principles:**
+
+- No Kubernetes, no Docker. OS-level process primitives + Copy-on-Write as a "proxy sandbox." The goal is to decouple and precisely measure our prediction algorithm's overhead without KVM/container noise masking the signal. This is a methodological adjustment made after the advisor raised the Firecracker question: we are measuring the control plane, not reinventing data-plane isolation technology.
+- Strict Reactor / DispatchPool separation. The epoll event loop never blocks; all UDS I/O is offloaded to a 64-thread DispatchPool. The predictor runs on the same thread as the event loop with zero contention.
+- Simplicity-first. EWMA + CUSUM run in O(1) time and O(1) memory. We claim this is sufficient for cyclic IoT workloads and intend to prove it against ARIMA on a Pareto (latency vs. memory) curve.
+
+[**Project**](https://github.com/ffengc/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> (Still Private, Coming Soon)
+
+</div>
+</div>
 
 <!-- here -->
 
@@ -225,3 +245,17 @@ for developers to implement and adapt in various environments.
     - [Demystifying C++](https://blog.csdn.net/yu_cblog/category_11925640.html)
     - [STL Source Code Deep Dive](https://blog.csdn.net/yu_cblog/category_11983210.html)
     - ...
+
+
+# 🌐 Open Source & Community
+
+- [LeetsGoAgain](https://github.com/ffengc/LeetsGoAgain): LeetCode problem-solving journal — solutions with written reasoning and notes, organized by topic and difficulty.
+- [rookie-cplusplus](https://github.com/ffengc/rookie-cplusplus): STL deep-dive — handcrafted implementations of core containers (string, vector, list, map, unordered_map) and data structures (AVL tree, red-black tree, skip list), along with algorithm library internals.
+- [rookie-csharp](https://github.com/ffengc/rookie-csharp): Reference notes and annotated examples covering C# language fundamentals, written during initial exploration of the language.
+- [Sequence-Alignment-Machine](https://github.com/ffengc/Sequence-Alignment-Machine): USC CSCI570 final project. Compares standard O(mn)-space dynamic programming with Hirschberg's O(m+n)-space divide-and-conquer algorithm for DNA/protein sequence alignment, with empirical analysis of the memory–runtime trade-off.
+- [NimbusBackup](https://github.com/ffengc/NimbusBackup): A cloud backup system that automatically uploads files from a specified local directory to a remote server. Supports browser-based viewing and downloading with HTTP range-based resumable download, and implements a hot/cold file management strategy that compresses infrequently accessed files to reduce disk usage.
+- [STL-based-Deque-implementation](https://github.com/ffengc/STL-based-Deque-implementation): A from-scratch implementation of `std::deque` following the STL design, including the segmented buffer layout and iterator arithmetic.
+- [Reactor-based-HyperWebServer](https://github.com/ffengc/Reactor-based-HyperWebServer): A high-concurrency web server built on a hand-rolled epoll reactor with red-black tree event management and async I/O multiplexing.
+- [Dual-Thread-Pool-Based-Pipeline-Communication-System-Framework](https://github.com/ffengc/Dual-Thread-Pool-Based-Pipeline-Communication-System-Framework): An inter-process pipeline communication framework built on dual thread pools, with RAII mutex wrappers, thread object encapsulation, and a reusable `thread_control` core that decouples thread management from client/server logic.
+- [Multiplexing-high-performance-IO-server](https://github.com/ffengc/Multiplexing-high-performance-IO-server): Implementations of all three I/O multiplexing models (select, poll, epoll) in C/C++, composable with HTTP/Web servers and other SystemV I/O models.
+- [NLP-PoetryModels](https://github.com/ffengc/NLP-PoetryModels): Experiments on CharRNN-based poem generation with LSTM, GRU, RNN variants, and attention/bidirectional extensions across Chinese, English, and Japanese corpora. Evaluated with Tsinghua BERT-CCPoem and human scoring.
