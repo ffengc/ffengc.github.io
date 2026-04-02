@@ -1,5 +1,14 @@
 <meta charset="utf-8">
 
+<!-- Prevent flash of wrong theme on page load -->
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+
 {% include seo.html %}
 
 <meta name="HandheldFriendly" content="True">

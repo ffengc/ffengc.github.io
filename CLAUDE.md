@@ -55,3 +55,15 @@ Author One, **Fengcheng Yu**, Author Three
 ```
 
 Images for papers/projects go in `images/`. The `_site/` directory is auto-generated and not committed.
+
+## Google Scholar Citation Crawler
+
+`google_scholar_crawler/main.py` fetches citation stats via the `scholarly` library. It requires a `GOOGLE_SCHOLAR_ID` environment variable and writes output to `google_scholar_crawler/results/gs_data.json` and `gs_data_shieldsio.json`. This directory is excluded from the Jekyll build (`_config.yml` exclude list). The crawler is intended to be run as a GitHub Actions job (not locally as part of normal development).
+
+## Key Config Locations
+
+- **Site metadata & author profile:** `_config.yml` (`author:` key — name, avatar, bio, social links)
+- **Nav links:** `_data/navigation.yml`
+- **Main content:** `_pages/about.md`
+- **Styles:** `_sass/` (SCSS, compiled and compressed by Jekyll)
+- **JS/assets:** `assets/`
