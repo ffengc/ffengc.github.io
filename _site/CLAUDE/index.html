@@ -3,6 +3,15 @@
   <head>
     <meta charset="utf-8">
 
+<!-- Prevent flash of wrong theme on page load -->
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+
 <!-- begin SEO -->
 
 
@@ -22,8 +31,8 @@
 <meta property="og:title" content="Fengcheng Yu">
 
 
-  <link rel="canonical" href="http://localhost:4000/CLAUDE/">
-  <meta property="og:url" content="http://localhost:4000/CLAUDE/">
+  <link rel="canonical" href="https://github.com/pages/ffengc/ffengc.github.io/CLAUDE/">
+  <meta property="og:url" content="https://github.com/pages/ffengc/ffengc.github.io/CLAUDE/">
 
 
 
@@ -106,6 +115,9 @@
           
             <li class="masthead__menu-item"><a href="/#-open-source--community">Open Source & Community</a></li>
           
+          <li class="masthead__menu-item dark-mode-item">
+            <span id="dark-mode-toggle" role="button" tabindex="0" title="Toggle dark mode">🌙</span>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -297,12 +309,27 @@ Author One, **Fengcheng Yu**, Author Three
 
 <p>Images for papers/projects go in <code class="language-plaintext highlighter-rouge">images/</code>. The <code class="language-plaintext highlighter-rouge">_site/</code> directory is auto-generated and not committed.</p>
 
+<h2 id="google-scholar-citation-crawler">Google Scholar Citation Crawler</h2>
+
+<p><code class="language-plaintext highlighter-rouge">google_scholar_crawler/main.py</code> fetches citation stats via the <code class="language-plaintext highlighter-rouge">scholarly</code> library. It requires a <code class="language-plaintext highlighter-rouge">GOOGLE_SCHOLAR_ID</code> environment variable and writes output to <code class="language-plaintext highlighter-rouge">google_scholar_crawler/results/gs_data.json</code> and <code class="language-plaintext highlighter-rouge">gs_data_shieldsio.json</code>. This directory is excluded from the Jekyll build (<code class="language-plaintext highlighter-rouge">_config.yml</code> exclude list). The crawler is intended to be run as a GitHub Actions job (not locally as part of normal development).</p>
+
+<h2 id="key-config-locations">Key Config Locations</h2>
+
+<ul>
+  <li><strong>Site metadata &amp; author profile:</strong> <code class="language-plaintext highlighter-rouge">_config.yml</code> (<code class="language-plaintext highlighter-rouge">author:</code> key — name, avatar, bio, social links)</li>
+  <li><strong>Nav links:</strong> <code class="language-plaintext highlighter-rouge">_data/navigation.yml</code></li>
+  <li><strong>Main content:</strong> <code class="language-plaintext highlighter-rouge">_pages/about.md</code></li>
+  <li><strong>Styles:</strong> <code class="language-plaintext highlighter-rouge">_sass/</code> (SCSS, compiled and compressed by Jekyll)</li>
+  <li><strong>JS/assets:</strong> <code class="language-plaintext highlighter-rouge">assets/</code></li>
+</ul>
+
           </section>
         </div>
       </article>
     </div>
 
     <script src="assets/js/main.min.js"></script>
+<script src="assets/js/dark-mode.js"></script>
 
 
 

@@ -40,11 +40,11 @@ pre {
   // --- Base ---
   body {
     background-color: #1a1b26;
-    color: #a9b1d6;
+    color: #ffffff;
   }
 
   h1, h2, h3, h4, h5, h6, strong, b {
-    color: #c0caf5;
+    color: #ffffff;
   }
 
   a {
@@ -69,10 +69,10 @@ pre {
     background: #16161e;
 
     a {
-      color: #a9b1d6;
+      color: #ffffff;
 
       &:hover {
-        color: #c0caf5;
+        color: #7aa2f7;
       }
     }
 
@@ -100,6 +100,7 @@ pre {
   }
 
   .author__urls {
+    // Mobile: shown as a dropdown popup — give it a dark card background
     background: #1e2030;
     border-color: #292e42;
 
@@ -109,6 +110,50 @@ pre {
 
     &:after {
       border-color: #1e2030 transparent;
+    }
+
+    // Desktop: always-visible list, must be transparent (no box)
+    @include breakpoint($large) {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    // Non-link items (e.g. location text)
+    li {
+      color: #ffffff;
+    }
+
+    // Sidebar links: white by default, blue on hover
+    a {
+      color: #ffffff;
+
+      &:hover {
+        color: #7aa2f7;
+      }
+
+      &:visited {
+        color: #ffffff;
+      }
+    }
+  }
+
+  // Social icons: brand colors are often dark (#000, #171516) and invisible
+  // on a dark background — override all to white in dark mode
+  .social-icons {
+    .fa,
+    .fas,
+    .fab,
+    .far,
+    .ai,
+    [class*="fa-"],
+    [class*="ai-"] {
+      color: #ffffff !important;
     }
   }
 
