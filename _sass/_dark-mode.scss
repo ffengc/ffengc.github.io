@@ -1,0 +1,259 @@
+/* ==========================================================================
+   DARK MODE
+   ========================================================================== */
+
+/* Smooth color transitions when switching themes */
+body,
+.masthead,
+.greedy-nav,
+.author__urls,
+.page__content h1,
+.paper-box,
+code,
+pre {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Dark mode toggle button in nav */
+.dark-mode-item {
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.1em;
+  padding: 0 0.25em;
+  opacity: 0.85;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  span {
+    cursor: pointer;
+  }
+}
+
+/* ==========================================================================
+   DARK THEME OVERRIDES  (applied when <html data-theme="dark">)
+   ========================================================================== */
+
+[data-theme="dark"] {
+
+  // --- Base ---
+  body {
+    background-color: #1a1b26;
+    color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6, strong, b {
+    color: #ffffff;
+  }
+
+  a {
+    color: #7aa2f7;
+
+    &:hover {
+      color: #89b4fa;
+    }
+
+    &:visited {
+      color: #9d7cd8;
+    }
+  }
+
+  // --- Masthead / Nav ---
+  .masthead {
+    background-color: #16161e;
+    border-bottom-color: #292e42;
+  }
+
+  .greedy-nav {
+    background: #16161e;
+
+    a {
+      color: #ffffff;
+
+      &:hover {
+        color: #7aa2f7;
+      }
+    }
+
+    .hidden-links {
+      background: #1e2030;
+      border-color: #292e42;
+
+      a:hover {
+        background: #292e42;
+      }
+
+      &:before {
+        border-color: #292e42 transparent;
+      }
+
+      &:after {
+        border-color: #1e2030 transparent;
+      }
+    }
+  }
+
+  // --- Sidebar ---
+  .author__avatar img {
+    border-color: #292e42;
+  }
+
+  .author__urls {
+    // Mobile: shown as a dropdown popup — give it a dark card background
+    background: #1e2030;
+    border-color: #292e42;
+
+    &:before {
+      border-color: #292e42 transparent;
+    }
+
+    &:after {
+      border-color: #1e2030 transparent;
+    }
+
+    // Desktop: always-visible list, must be transparent (no box)
+    @include breakpoint($large) {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    // Non-link items (e.g. location text)
+    li {
+      color: #ffffff;
+    }
+
+    // Sidebar links: white by default, blue on hover
+    a {
+      color: #ffffff;
+
+      &:hover {
+        color: #7aa2f7;
+      }
+
+      &:visited {
+        color: #ffffff;
+      }
+    }
+  }
+
+  // Social icons: brand colors are often dark (#000, #171516) and invisible
+  // on a dark background — override all to white in dark mode
+  .social-icons {
+    .fa,
+    .fas,
+    .fab,
+    .far,
+    .ai,
+    [class*="fa-"],
+    [class*="ai-"] {
+      color: #ffffff !important;
+    }
+  }
+
+  // --- Page content ---
+  .page__content {
+    h1 {
+      border-bottom-color: #292e42;
+    }
+  }
+
+  // --- Paper/project cards ---
+  .paper-box {
+    border-bottom-color: #292e42;
+
+    .paper-box-image img {
+      box-shadow: 3px 3px 8px #000;
+    }
+  }
+
+  // --- Code blocks ---
+  code {
+    background-color: #1f2335;
+    color: #c0caf5;
+  }
+
+  pre {
+    background-color: #1f2335;
+    color: #c0caf5;
+
+    code {
+      background-color: transparent;
+    }
+  }
+
+  // --- Tables ---
+  table {
+    border-color: #292e42;
+
+    thead {
+      background-color: #1e2030;
+      color: #c0caf5;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1e2030;
+    }
+
+    td, th {
+      border-color: #292e42;
+    }
+  }
+
+  // --- Buttons ---
+  .btn {
+    color: #a9b1d6;
+    border-color: #292e42;
+
+    &:hover {
+      color: #c0caf5;
+    }
+  }
+
+  // --- Footer ---
+  .page__footer {
+    background-color: #16161e;
+    color: #565f89;
+
+    a {
+      color: #565f89;
+    }
+  }
+
+  // --- Notices ---
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--danger,
+  .notice--success {
+    background-color: #1e2030;
+    border-color: #292e42;
+  }
+
+  // --- Form elements ---
+  input,
+  textarea,
+  select {
+    background-color: #1e2030;
+    color: #a9b1d6;
+    border-color: #292e42;
+  }
+
+  // --- Horizontal rules ---
+  hr {
+    border-color: #292e42;
+  }
+
+  // --- Blockquotes ---
+  blockquote {
+    border-left-color: #292e42;
+    color: #565f89;
+  }
+}

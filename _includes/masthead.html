@@ -8,6 +8,9 @@
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+          <li class="masthead__menu-item dark-mode-item">
+            <span id="dark-mode-toggle" role="button" tabindex="0" title="Toggle dark mode">🌙</span>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>

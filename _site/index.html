@@ -3,6 +3,15 @@
   <head>
     <meta charset="utf-8">
 
+<!-- Prevent flash of wrong theme on page load -->
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  var theme = saved ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+
 <!-- begin SEO -->
 
 
@@ -22,8 +31,8 @@
 <meta property="og:title" content="Fengcheng Yu">
 
 
-  <link rel="canonical" href="http://localhost:4000/">
-  <meta property="og:url" content="http://localhost:4000/">
+  <link rel="canonical" href="https://github.com/pages/ffengc/ffengc.github.io/">
+  <meta property="og:url" content="https://github.com/pages/ffengc/ffengc.github.io/">
 
 
 
@@ -108,6 +117,9 @@
           
             <li class="masthead__menu-item"><a href="/#-open-source--community">Open Source & Community</a></li>
           
+          <li class="masthead__menu-item dark-mode-item">
+            <span id="dark-mode-toggle" role="button" tabindex="0" title="Toggle dark mode">🌙</span>
+          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -548,6 +560,7 @@ for developers to implement and adapt in various environments.</li>
     </div>
 
     <script src="assets/js/main.min.js"></script>
+<script src="assets/js/dark-mode.js"></script>
 
 
 
