@@ -96,7 +96,7 @@ Jiehui Huang, Lishan Lin, **Fengcheng Yu**, Xuedong He, Wenhui Song, Jiaying Lin
 
 <!-- here -->
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/coming.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/edge.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Edge FaaS Cold-Start Mitigation via EWMA + CUSUM Prediction** *USC CSCI599, Network System for Cloud Computing Course Project, Professor: [Ramesh Govindan](https://govindan.usc.edu)*
