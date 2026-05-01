@@ -43,7 +43,6 @@ Previously, I received my Bachelor of Engineering degree from [Sun Yat-sen Unive
 Chunyu Xia, Christina Suyong Shin, **Fengcheng Yu**, Chuan Li, Fan Bai, Harsha V. Madhyastha, Ramesh Govindan
 
 - **Keywords:** mobile sensing, gaze localization, multi-camera perception, real-time systems
-- Developed a real-time mobile sensing pipeline for an in-vehicle perception system integrating synchronized multi-camera streams and geographic signals. Implemented low-latency data processing and buffering mechanisms suitable for resource-constrained mobile environments. Contributed to data processing, experimental visualization, and figure preparation.
 
 </div>
 </div>
@@ -85,7 +84,7 @@ Jiehui Huang, Lishan Lin, **Fengcheng Yu**, Xuedong He, Wenhui Song, Jiaying Lin
 
 <!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
 
-- Proposed an effective end-to-end deep learning model for Parkinson's disease (PD) severity diagnosis based on facial video is proposed. The model can extract features from PD patient videos and give robust and interpretable diagnostic results, effectively judging the severity of PD disease.
+- **Keywords:** Parkinson's disease, severity diagnosis, deep learning, facial video, interpretable model
 
 </div>
 </div>
@@ -101,16 +100,9 @@ Jiehui Huang, Lishan Lin, **Fengcheng Yu**, Xuedong He, Wenhui Song, Jiaying Lin
 
 **Edge FaaS Cold-Start Mitigation via EWMA + CUSUM Prediction** *USC CSCI599, Network System for Cloud Computing Course Project, Professor: [Ramesh Govindan](https://govindan.usc.edu)*
 
-This project builds a clean-slate, bare-metal FaaS (Function-as-a-Service) worker node from scratch in C++, targeting the cold-start problem in edge serverless environments.
+A clean-slate, bare-metal C++ FaaS worker targeting cold-start in edge serverless. Uses OS-level Copy-on-Write process primitives to isolate the prediction algorithm from container/KVM noise. Strict Reactor / 64-thread DispatchPool separation; the EWMA + CUSUM predictor runs in O(1) time and memory.
 
-**Key Design Principles:**
-
-- No Kubernetes, no Docker. OS-level process primitives + Copy-on-Write as a "proxy sandbox." The goal is to decouple and precisely measure our prediction algorithm's overhead without KVM/container noise masking the signal. This is a methodological adjustment made after the advisor raised the Firecracker question: we are measuring the control plane, not reinventing data-plane isolation technology.
-- Strict Reactor / DispatchPool separation. The epoll event loop never blocks; all UDS I/O is offloaded to a 64-thread DispatchPool. The predictor runs on the same thread as the event loop with zero contention.
-- Simplicity-first. EWMA + CUSUM run in O(1) time and O(1) memory. We claim this is sufficient for cyclic IoT workloads and intend to prove it against ARIMA on a Pareto (latency vs. memory) curve.
-
-[**Project**](https://github.com/ffengc/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> (Still Private, Coming Soon)
-
+[**Project**](https://github.com/ffengc/edge-faas-cpp)
 </div>
 </div>
 
@@ -121,32 +113,27 @@ This project builds a clean-slate, bare-metal FaaS (Function-as-a-Service) worke
 
 **HareMQ** *Simulation implementation of RabbitMQ core functions*
 
-- Developed a C++-based message queue system inspired by RabbitMQ, focusing on implementing various message routing methods such as direct, topic, header, and fan-out exchanges to enhance messaging flexibility.
-- Engineered the system to support message persistence and high availability, ensuring reliability and service continuity akin to RabbitMQ’s operational standards.
-- Integrated multiple client support and was designed to handle scenarios in big data processing, microservice architectures, and real-time data applications, reflecting a comprehensive understanding of distributed systems.
+A C++ message queue inspired by RabbitMQ. Supports direct/topic/header/fan-out exchanges, message persistence, high availability, and multiple concurrent clients.
 
-**Related technologies:** C/C++, C++11, Boost, Protobuf, Muduo, SQLite3, Gtest
+**Related technologies:** C/C++11, Boost, Protobuf, Muduo, SQLite3, Gtest
 
-[**Project**](https://github.com/ffengc/HareMQ) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ffengc/HareMQ)
 
 </div>
 </div>
 
 <!-- here -->
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/search-engine.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/boost_search_engine_architecture_16x9_v2.svg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**boost-search-engine** *A search engine implementation based on the Boost library*
+**Boost Search Engine** *A search engine implementation based on the Boost library*
 
-- Developed a specialized search engine for Boost library documentation, enhancing search accuracy and efficiency using C++, Boost libraries, HTML, CSS, and JavaScript.
-- Managed the entire search engine construction process from data preprocessing and index creation to query processing and result presentation, ensuring a comprehensive search experience.
-- Implemented advanced features such as word frequency analysis, dynamically updated indexes, and prioritized search result
-sorting, making the system highly effective for developers seeking quick access to technical documents.
+A specialized search engine over the Boost library documentation. Covers the full pipeline — data preprocessing, inverted index construction, query processing, ranked result presentation — with word-frequency scoring and dynamic index updates.
 
-**Related technologies:** System/Network Programming, C/C++11, Web Development, STL, Boost, jsoncpp, cppjieba, cpp-httplib, jQuery, ajax, inverted indexing, ranking algorithms, ...
+**Related technologies:** C/C++11, STL, Boost, jsoncpp, cppjieba, cpp-httplib, jQuery, ajax, inverted indexing, ranking algorithms
 
-[**Project**](https://github.com/ffengc/boost-search-engine/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ffengc/boost-search-engine/)
 
 </div>
 </div>
@@ -154,14 +141,13 @@ sorting, making the system highly effective for developers seeking quick access 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/lb-model.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Load-balanced-online-OJ-system** *An online algorithm question-solving service, similar to LeetCode*
+**Load-balanced Online Judge System** *An online algorithm question-solving service, similar to LeetCode*
 
-- Developed an online coding and evaluation platform similar to LeetCode, enabling users to write, submit, and evaluate code directly in the browser. Supported and Provided instant feedback and detailed error analysis.
-- Implemented key features including question browsing, real-time code editing with Ace editor, and automated code submission and judgment. Integrated custom load balancing to optimize server utilization and response times.
+A LeetCode-like online coding and evaluation platform — write, submit, and judge code in the browser with instant feedback. Includes Ace editor integration and a custom load balancer over distributed multi-process/multi-thread judges.
 
-**Related technologies:** System/Network Programming, STL, Boost standard library, cpp-httplib, ctemplate, jsoncpp, load balancing design, distributed systems, multi process/thread control, MySQL C Connect, Ace editor, ajax
+**Related technologies:** STL, Boost, cpp-httplib, ctemplate, jsoncpp, MySQL C Connector, Ace editor, ajax, load balancing
 
-[**Project**](https://github.com/ffengc/Load-balanced-online-OJ-system) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ffengc/Load-balanced-online-OJ-system)
 
 </div>
 </div>
@@ -171,13 +157,13 @@ sorting, making the system highly effective for developers seeking quick access 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/tcmalloc.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Google-tcmalloc-simulation-implementation**
+**Google Tcmalloc Simulation Implementation**
 
-The tcmalloc is a memory management project open sourced by Google. I implemented the core functions in tcmalloc through learning and simulation, and implemented a high-concurrency memory pool to replace the native malloc memory development method. Its design purpose is to adapt to the characteristics of a single server with multiple CPU cores, and to ensure that the performance of the memory allocator will not drop sharply due to multi-core competition. In order to reduce memory usage, objects of the same memory size are concentrated in spans composed of several adjacent pages.
+A simulation of Google's tcmalloc — a high-concurrency memory pool replacing native `malloc`, designed for multi-core servers. Aggregates same-size objects into page-aligned spans to reduce fragmentation and avoid per-core lock contention.
 
-**Related technologies:** Sync and Async Programming, System Programming, STL, multi-threading, memory management algorithms, lock-free programming
+**Related technologies:** STL, multi-threading, memory management, lock-free programming
 
-[**Project**](https://github.com/ffengc/Google-tcmalloc-simulation-implementation) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ffengc/Google-tcmalloc-simulation-implementation)
 
 </div>
 </div>
@@ -187,13 +173,13 @@ The tcmalloc is a memory management project open sourced by Google. I implemente
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/logsystem.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Multi-Pattern-Logging-System**
+**Multi-pattern Logging System**
 
-- Engineered a comprehensive logging system in C++ that supports multi-level logging, synchronous and asynchronous modes, and reliable output to various destinations like console and files. Utilized advanced C++ features and design patterns to ensure thread-safe operations and expandability across different logging environments.
+A C++ logging system with multi-level logging, sync/async modes, and pluggable output sinks (console, file). Thread-safe by design, applying classic OOP patterns throughout.
 
-**Related technologies:** class hierarchy design (inheritance and polymorphism), producer consumer model, multi-threading, design pattern (singleton, factory proxy, builder, etc.), GTest
+**Related technologies:** design patterns (singleton, factory, builder, proxy), producer–consumer, multi-threading, GTest
 
-[**Project**](https://github.com/ffengc/Multi-Pattern-Logging-System) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ffengc/Multi-Pattern-Logging-System)
 
 </div>
 </div>
@@ -203,15 +189,13 @@ The tcmalloc is a memory management project open sourced by Google. I implemente
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/projects/event-pipe.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Event-Driven-Pipeline-Communication-System-Framework**
+**Event-Driven Pipeline Communication System Framework**
 
-- Developed an event-driven communication framework using Epoll, optimizing inter-process communication with a focus on
-efficient data handling. Created a modular system that supports easy integration and expansion, providing a robust platform
-for developers to implement and adapt in various environments.
+An epoll-based event-driven IPC framework with a modular structure for easy integration and extension across different environments.
 
-**Related technologies:** STL, system programming, multiplexing technology, pipe communication
+**Related technologies:** STL, system programming, multiplexing, pipe communication
 
-[**Project**](https://github.com/ffengc/Event-Driven-Pipeline-Communication-System-Framework) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/ffengc/Event-Driven-Pipeline-Communication-System-Framework)
 
 </div>
 </div>
