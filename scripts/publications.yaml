@@ -1,0 +1,37 @@
+- title: "*** Paper Title"
+  author: Chunyu Xia, Christina Suyong Shin, Fengcheng Yu, Chuan Li, Fan Bai, Harsha V. Madhyastha, Ramesh Govindan
+  conference: ACM International Conference on Mobile Computing and Networking
+  conference_abbr: MobiCom'26
+  year: 2026
+  status: Under Review
+  teaser_url: images/cargaze.png
+  description: Real-time gaze-based target localization for in-vehicle perception systems via multi-camera mobile sensing.
+
+- title: Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation
+  author: Fengcheng Yu, Haoran Xu, Canming Xia, Ziyang Zong, Guang Tan
+  conference: IEEE Transactions on Image Processing
+  conference_abbr: TIP
+  year: 2025
+  status: Under Review
+  teaser_url: images/deflickering_occ.png
+  arxiv_url: https://arxiv.org/abs/2502.15438
+  description: A plug-and-play lightweight spatio-temporal correlation module that suppresses flickering in vision-based occupancy networks.
+
+- title: "HouseTune: Two-Stage Floorplan Generation with LLM Assistance"
+  author: Ziyang Zong, Guanying Chen, Zhaohuan Zhan, Fengcheng Yu, Guang Tan
+  conference: AAAI Conference on Artificial Intelligence
+  conference_abbr: AAAI'26
+  year: 2026
+  teaser_url: images/llm.png
+  paper_url: https://ojs.aaai.org/index.php/AAAI/article/view/38417
+  arxiv_url: https://arxiv.org/abs/2411.12279
+  description: Two-stage floorplan generation that combines large language model guidance with a diffusion model.
+
+- title: "Parkinson's severity diagnosis explainable model based on 3D multi-head attention residual network"
+  author: Jiehui Huang, Lishan Lin, Fengcheng Yu, Xuedong He, Wenhui Song, Jiaying Lin, Zhenchao Tang, Kang Yuan, Yucheng Li, Haofan Huang, Zhong Pei, Wenbiao Xian, Calvin Yu-Chian Chen
+  conference: Computers in Biology and Medicine
+  conference_abbr: CIBM
+  year: 2024
+  teaser_url: images/pd-model.png
+  paper_url: https://www.sciencedirect.com/science/article/pii/S001048252400043X
+  description: An interpretable 3D multi-head attention residual network for severity diagnosis of Parkinson's disease from facial video.
