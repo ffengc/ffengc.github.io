@@ -1,21 +1,30 @@
 - title: "*** Paper Title"
+  author: Fengcheng Yu, ..., Vitor Campagnolo Guizilini, Yue Wang
+  conference: IEEE International Conference on Robotics and Automation
+  conference_abbr: ICRA'27
+  year: 2027
+  status: Planned Submission
+  teaser_url: https://placehold.co/400x285?text=To+Be+Updated
+  description: World models for autonomous driving policy learning, in collaboration with Toyota Research Institute (TRI).
+
+- title: Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation
+  author: Fengcheng Yu*, Haoran Xu*, Canming Xia, Ziyang Zong, Guang Tan
+  conference: Pattern Recognition
+  conference_abbr: PR
+  year: 2026
+  status: Major Revision Submitted
+  teaser_url: images/deflickering_occ.png
+  arxiv_url: https://arxiv.org/abs/2502.15438
+  description: OccLinker, a plug-in that mines motion from discarded high-frequency frames to correct current-frame predictions. Raises mIoU by up to +3.09 across 4 base occupancy networks at 2.29% added memory, and improves temporal consistency by up to +7.68.
+
+- title: "*** Paper Title"
   author: Chunyu Xia, Christina Suyong Shin, Fengcheng Yu, Chuan Li, Fan Bai, Harsha V. Madhyastha, Ramesh Govindan
   conference: ACM International Conference on Mobile Computing and Networking
   conference_abbr: MobiCom'26
   year: 2026
   status: Under Review
   teaser_url: images/cargaze.png
-  description: Real-time gaze-based target localization for in-vehicle perception systems via multi-camera mobile sensing.
-
-- title: Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation
-  author: Fengcheng Yu, Haoran Xu, Canming Xia, Ziyang Zong, Guang Tan
-  conference: IEEE Transactions on Image Processing
-  conference_abbr: TIP
-  year: 2025
-  status: Under Review
-  teaser_url: images/deflickering_occ.png
-  arxiv_url: https://arxiv.org/abs/2502.15438
-  description: A plug-and-play lightweight spatio-temporal correlation module that suppresses flickering in vision-based occupancy networks.
+  description: Real-time in-vehicle gaze target tracking on constrained mobile hardware, synchronizing multi-camera streams to near-millisecond front/rear timestamp alignment.
 
 - title: "HouseTune: Two-Stage Floorplan Generation with LLM Assistance"
   author: Ziyang Zong, Guanying Chen, Zhaohuan Zhan, Fengcheng Yu, Guang Tan
@@ -25,7 +34,7 @@
   teaser_url: images/llm.png
   paper_url: https://ojs.aaai.org/index.php/AAAI/article/view/38417
   arxiv_url: https://arxiv.org/abs/2411.12279
-  description: Two-stage floorplan generation that combines large language model guidance with a diffusion model.
+  description: A two-stage pipeline where an LLM drafts the initial layout by chain-of-thought prompting and a conditional diffusion model refines it under physical constraints, without domain-specific training data.
 
 - title: "Parkinson's severity diagnosis explainable model based on 3D multi-head attention residual network"
   author: Jiehui Huang, Lishan Lin, Fengcheng Yu, Xuedong He, Wenhui Song, Jiaying Lin, Zhenchao Tang, Kang Yuan, Yucheng Li, Haofan Huang, Zhong Pei, Wenbiao Xian, Calvin Yu-Chian Chen
@@ -34,4 +43,4 @@
   year: 2024
   teaser_url: images/pd-model.png
   paper_url: https://www.sciencedirect.com/science/article/pii/S001048252400043X
-  description: An interpretable 3D multi-head attention residual network for severity diagnosis of Parkinson's disease from facial video.
+  description: MARNet, a 3D multi-head attention residual network pairing attention convolutions with an LSTM backbone to grade Parkinson's severity on the Hoehn-Yahr scale from short smartphone videos of facial expressions.
