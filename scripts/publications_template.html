@@ -8,7 +8,7 @@
             </td>
             <td>
                 <p style="color: #080808; font-size: 20px; font-style: normal; margin-bottom: 0;">{{ paper.title }}</p>
-                <p style="font-size: 14px; margin-top: 0; margin-bottom: 1;"><em>{{ paper.conference }}</em>{% if paper.conference_abbr %} (<i><b>{{ paper.conference_abbr }}</b></i>){% endif %},{% if paper.oral %}<i><b>{{ paper.oral }},</b></i>{% endif %} {{ paper.year }}.{% if paper.status %} <em>{{ paper.status }}.</em>{% endif %}</p>
+                <p style="font-size: 14px; margin-top: 0; margin-bottom: 1;">{% if paper.conference %}<em>{{ paper.conference }}</em>{% if paper.conference_abbr %} (<i><b>{{ paper.conference_abbr }}</b></i>){% endif %},{% if paper.oral %}<i><b>{{ paper.oral }},</b></i>{% endif %} {{ paper.year }}.{% if paper.status %} <em>{{ paper.status }}.</em>{% endif %}{% else %}<em>{{ paper.status }}</em>, {{ paper.year }}.{% endif %}</p>
                 <p style="color: #333;">
                     {% for author in paper.author.split(', ') %}{% if 'Fengcheng Yu' in author %}<b>{{author}}</b>{% else %}{{author}}{% endif %}{% if not loop.last %}, {% endif %}{% endfor %}
                 </p>
