@@ -1,12 +1,3 @@
-- title: "*** Paper Title"
-  author: Fengcheng Yu, ..., Vitor Campagnolo Guizilini, Yue Wang
-  conference: IEEE International Conference on Robotics and Automation
-  conference_abbr: ICRA'27
-  year: 2027
-  status: Planned Submission
-  teaser_url: https://placehold.co/400x285?text=To+Be+Updated
-  description: World models for autonomous driving policy learning, in collaboration with Toyota Research Institute (TRI).
-
 - title: Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation
   author: Fengcheng Yu*, Haoran Xu*, Canming Xia, Ziyang Zong, Guang Tan
   conference: Pattern Recognition
@@ -17,14 +8,12 @@
   arxiv_url: https://arxiv.org/abs/2502.15438
   description: OccLinker, a plug-in that mines motion from discarded high-frequency frames to correct current-frame predictions. Raises mIoU by up to +3.09 across 4 base occupancy networks at 2.29% added memory, and improves temporal consistency by up to +7.68.
 
-- title: "*** Paper Title"
+- title: Real-Time Multi-Camera Gaze Tracking for In-Vehicle Perception
   author: Chunyu Xia, Christina Suyong Shin, Fengcheng Yu, Chuan Li, Fan Bai, Harsha V. Madhyastha, Ramesh Govindan
-  conference: ACM International Conference on Mobile Computing and Networking
-  conference_abbr: MobiCom'26
   year: 2026
-  status: Under Review
+  status: Manuscript under double-blind review
   teaser_url: images/cargaze.png
-  description: Real-time in-vehicle gaze target tracking on constrained mobile hardware, synchronizing multi-camera streams to near-millisecond front/rear timestamp alignment.
+  description: A real-time mobile sensing system that synchronizes multiple camera streams to track driver attention under limited hardware resources.
 
 - title: "HouseTune: Two-Stage Floorplan Generation with LLM Assistance"
   author: Ziyang Zong, Guanying Chen, Zhaohuan Zhan, Fengcheng Yu, Guang Tan
