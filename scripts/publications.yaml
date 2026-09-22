@@ -1,5 +1,16 @@
+- title: "DriveReferee: Geometric Safety Verdicts Need Not Be Learned for Driving World-Action Models"
+  author: Fengcheng Yu, Dhruv Parikh, Junjie Ye, Maulik Bhatt, Thang Vu, Igor Vasiljevic, Vitor Guizilini†, Yue Wang†
+  conference: arXiv preprint
+  year: 2026
+  status: Submitted to ICRA 2027
+  teaser_url: images/projects/drivereferee_teaser.jpg
+  teaser_video: images/projects/drivereferee_teaser.mp4
+  arxiv_url: https://arxiv.org/abs/2609.22762
+  project_url: https://ffengc.github.io/drivereferee/
+  description: An analytic referee that executes the evaluator's known geometric safety rule on a scene state predicted from a single front camera, used both to distill safety preferences into a driving world-action model and to select safer candidates at deployment. Reaches 92.02 PDMS on the full NAVSIM navtest.
+
 - title: Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation
-  author: Fengcheng Yu*, Haoran Xu*, Canming Xia, Ziyang Zong, Guang Tan
+  author: Fengcheng Yu*, Haoran Xu*, Canming Xia, Ziyang Zong, Guang Tan†
   conference: Pattern Recognition
   conference_abbr: PR
   year: 2026
@@ -9,14 +20,14 @@
   description: OccLinker, a plug-in that mines motion from discarded high-frequency frames to correct current-frame predictions. Raises mIoU by up to +3.09 across 4 base occupancy networks at 2.29% added memory, and improves temporal consistency by up to +7.68.
 
 - title: Real-Time Multi-Camera Gaze Tracking for In-Vehicle Perception
-  author: Chunyu Xia, Christina Suyong Shin, Fengcheng Yu, Chuan Li, Fan Bai, Harsha V. Madhyastha, Ramesh Govindan
+  author: Chunyu Xia, Christina Suyong Shin, Fengcheng Yu, Chuan Li, Fan Bai, Harsha V. Madhyastha, Ramesh Govindan†
   year: 2026
   status: Manuscript under double-blind review
   teaser_url: images/cargaze.png
   description: A real-time mobile sensing system that synchronizes multiple camera streams to track driver attention under limited hardware resources.
 
 - title: "HouseTune: Two-Stage Floorplan Generation with LLM Assistance"
-  author: Ziyang Zong, Guanying Chen, Zhaohuan Zhan, Fengcheng Yu, Guang Tan
+  author: Ziyang Zong, Guanying Chen, Zhaohuan Zhan, Fengcheng Yu, Guang Tan†
   conference: AAAI Conference on Artificial Intelligence
   conference_abbr: AAAI'26
   year: 2026
@@ -26,7 +37,7 @@
   description: A two-stage pipeline where an LLM drafts the initial layout by chain-of-thought prompting and a conditional diffusion model refines it under physical constraints, without domain-specific training data.
 
 - title: "Parkinson's severity diagnosis explainable model based on 3D multi-head attention residual network"
-  author: Jiehui Huang, Lishan Lin, Fengcheng Yu, Xuedong He, Wenhui Song, Jiaying Lin, Zhenchao Tang, Kang Yuan, Yucheng Li, Haofan Huang, Zhong Pei, Wenbiao Xian, Calvin Yu-Chian Chen
+  author: Jiehui Huang, Lishan Lin, Fengcheng Yu, Xuedong He, Wenhui Song, Jiaying Lin, Zhenchao Tang, Kang Yuan, Yucheng Li, Haofan Huang, Zhong Pei†, Wenbiao Xian†, Calvin Yu-Chian Chen†
   conference: Computers in Biology and Medicine
   conference_abbr: CIBM
   year: 2024

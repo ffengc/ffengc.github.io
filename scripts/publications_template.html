@@ -4,7 +4,11 @@
         {%- for paper in publications %}
         <tr>
             <td width="306">
+                {%- if paper.teaser_video %}
+                <video src="{{ paper.teaser_video }}" poster="{{ paper.teaser_url }}" width="285" autoplay loop muted playsinline preload="metadata" style="box-shadow: 4px 4px 8px #888; display: block;"></video>
+                {%- else %}
                 <img src="{{ paper.teaser_url }}" width="285px" style="box-shadow: 4px 4px 8px #888">
+                {%- endif %}
             </td>
             <td>
                 <p style="color: #080808; font-size: 20px; font-style: normal; margin-bottom: 0;">{{ paper.title }}</p>
@@ -24,5 +28,5 @@
         </tr>
         {% endfor -%}
     </table>
-    <p style="font-size: 13px; color: #777; margin-top: 0;">* Equal contribution.</p>
+    <p style="font-size: 13px; color: #777; margin-top: 0;">* Equal contribution. &nbsp;&dagger; Corresponding author.</p>
 </div>
