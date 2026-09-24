@@ -14,9 +14,11 @@
   conference: Pattern Recognition
   conference_abbr: PR
   year: 2026
-  status: Accepted
+  volume: "183"
   teaser_url: images/deflickering_occ.png
   arxiv_url: https://arxiv.org/abs/2502.15438
+  publisher_url: https://doi.org/10.1016/j.patcog.2026.114988
+  publisher_label: Elsevier
   description: OccLinker, a plug-in that mines motion from discarded high-frequency frames to correct current-frame predictions. Raises mIoU by up to +3.09 across 4 base occupancy networks at 2.29% added memory, and improves temporal consistency by up to +7.68.
 
 - title: Real-Time Multi-Camera Gaze Tracking for In-Vehicle Perception
