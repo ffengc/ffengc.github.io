@@ -9,6 +9,15 @@
   project_url: https://ffengc.github.io/drivereferee/
   description: An analytic referee that executes the evaluator's known geometric safety rule on a scene state predicted from a single front camera, used both to distill safety preferences into a driving world-action model and to select safer candidates at deployment. Reaches 92.02 PDMS on the full NAVSIM navtest.
 
+- title: "PhysWAM: Physically Consistent World Action Model for Autonomous Driving"
+  author: Dhruv Parikh, Fengcheng Yu, Quankai Gao, Jiawei Yang, Junjie Ye, Maulik Bhatt, Thang Vu, Charles Ochoa, Rowan McAllister, Igor Vasiljevic, Rajgopal Kannan, Viktor Prasanna, Vitor Guizilini†, Yue Wang†
+  conference: arXiv preprint
+  year: 2026
+  status: Submitted to ICLR 2027
+  teaser_url: images/physwam.png
+  arxiv_url: https://arxiv.org/abs/2609.37970
+  description: A unified world-action model that co-denoises multiview video, metric depth, and ego motion in a single flow-matching transformer. Coupled Point Projection (CPP) aligns the generated depth and ego motion with recorded LiDAR to promote physical consistency, and a label-free consensus rule selects trajectories without a learned scorer or simulator feedback.
+
 - title: Deflickering Vision-Based Occupancy Networks through Lightweight Spatio-Temporal Correlation
   author: Fengcheng Yu*, Haoran Xu*, Canming Xia, Ziyang Zong, Guang Tan†
   conference: Pattern Recognition
