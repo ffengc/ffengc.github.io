@@ -24,6 +24,7 @@
                     {%- if paper.paper_url %}<a href="{{ paper.paper_url }}" style="color: #008CBA; text-decoration: none;"><i class="fas fa-file-pdf"></i> Paper </a>{% endif -%}
                     {%- if paper.arxiv_url %}<a href="{{ paper.arxiv_url }}" style="color: #008CBA;"><i class="fas fa-project-diagram"></i> Arxiv </a>{% endif -%}
                     {%- if paper.publisher_url %}<a href="{{ paper.publisher_url }}" style="color: #008CBA;"><i class="fas fa-book"></i> {{ paper.publisher_label or 'Publisher' }} </a>{% endif -%}
+                    {%- if paper.code_url %}<a href="{{ paper.code_url }}" style="color: #008CBA;"><i class="fab fa-github"></i> Code </a>{% endif -%}
                 </p>
             </td>
         </tr>

@@ -7,6 +7,7 @@
   teaser_video: images/projects/drivereferee_teaser.mp4
   arxiv_url: https://arxiv.org/abs/2609.22762
   project_url: https://ffengc.github.io/drivereferee/
+  code_url: https://github.com/ffengc/drivereferee
   description: An analytic referee that executes the evaluator's known geometric safety rule on a scene state predicted from a single front camera, used both to distill safety preferences into a driving world-action model and to select safer candidates at deployment. Reaches 92.02 PDMS on the full NAVSIM navtest.
 
 - title: "PhysWAM: Physically Consistent World Action Model for Autonomous Driving"
@@ -28,6 +29,8 @@
   arxiv_url: https://arxiv.org/abs/2502.15438
   publisher_url: https://doi.org/10.1016/j.patcog.2026.114988
   publisher_label: Elsevier
+  project_url: https://ffengc.github.io/occlinker/
+  code_url: https://github.com/ffengc/occlinker
   description: OccLinker, a plug-in that mines motion from discarded high-frequency frames to correct current-frame predictions. Raises mIoU by up to +3.09 across 4 base occupancy networks at 2.29% added memory, and improves temporal consistency by up to +7.68.
 
 - title: Real-Time Multi-Camera Gaze Tracking for In-Vehicle Perception
